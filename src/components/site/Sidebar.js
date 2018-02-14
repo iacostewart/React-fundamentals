@@ -18,6 +18,7 @@ const Sidebar = () => (
         <li><Link to="/resources">Resources</Link></li>
         <li><Link to="/jsxrules">JSX Rules</Link></li>
         <li><Link to="/classcomponentdemo">Class Component</Link></li>
+        <li><Link to="/propsdemo">Props Demo</Link></li>
 
       </ul>
     </div>
