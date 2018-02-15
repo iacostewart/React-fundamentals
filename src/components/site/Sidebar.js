@@ -21,6 +21,8 @@ const Sidebar = () => (
         <li><Link to="/propsdemo">Props Demo</Link></li>
         <li><Link to="/movie">Movie Search App</Link></li>
         <li><Link to="/lifecyclecodepen">LIfe Cycle</Link></li>
+        <li><Link to="/timer">Timers</Link></li>
+        
 
       </ul>
     </div>

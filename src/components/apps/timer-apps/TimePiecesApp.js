@@ -1,13 +1,10 @@
 import React from 'react';
 import TimerApp from './TimerApp';
-
-//import clockApp from ./'clockApp'
-
-//import StopWatchApp from './StopwatchApp'
+// import ClockApp from './ClockApp';
+// import StopWatchApp from './StopWatchApp'
 
 
-const  TimePiecesApp = () => {
-
+const TimePiecesApp = () => {
     return (
         <div className="main">
             <div className="mainDiv">
@@ -16,10 +13,9 @@ const  TimePiecesApp = () => {
                 <ClockApp />
                 <hr />
                 <StopWatchApp /> */}
-            </div>        
+            </div>
         </div>
     )
-
 }
 
 export default TimePiecesApp;

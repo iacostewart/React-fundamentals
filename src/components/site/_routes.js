@@ -9,6 +9,7 @@ import React from 'react';
   import MovieSearchApp from '../apps/movie-search-app/MovieApp';
   import Form from '../apps/movie-search-app/MovieApp';
   import LifeCycleCodepen from '../concepts/LifeCycleCodepen'
+  import TimePiecesApp from '../apps/timer-apps/TimePiecesApp'
   export const routes = [{
       path: '/' || '/home',
       exact: true,
@@ -49,7 +50,14 @@ import React from 'react';
       exact: true,
       main: () => < LifeCycleCodepen />
 
+    },
+    {
+      path: '/timer',
+      exace: true, 
+      main: () => <TimePiecesApp /> 
+
     }
+
 
 
 
