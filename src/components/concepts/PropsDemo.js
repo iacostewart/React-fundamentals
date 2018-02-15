@@ -17,30 +17,44 @@ export const Projects = [
                 this.state = { projects: Projects};
                 console.log('State ChecK', this.state.projects);
         }
-        render() {
-            const works = this.state.projects.map((project, i) => {
-                return (
-                    <h1>Hey Kenn! </h1>
-                );
-            })
-
+       
+            
+                
+           
+              render() {
+                        const work = this.state.projects.map((project, i) => {
+                            console.log("project data lives here", project);
+                            console.log("index lives here", i)
             
             return (
-                <div className="main">
-                    <div className="mainDiv">
-                         <h1>List of Projects</h1>
-                         <div>
-                             <Title title={this.props.title}/>
-                             <Author author={this.props.author} />
-                             <CodepenUrl codepenUrl={this.props.codepenUrl}/>
-                             <Footer date={this.props.date}/>
+               
+                         <div key={i}>
+                             <Title key title={project.title} />
+                             <Author key author={project.author} />
+                             <CodepenUrl  codepenUrl={project.codepenUrl} />
+                             <Footer date={project.date} />
                              <hr/>
                          </div>
-                    </div>
-                </div>
          );
+         
+         })
+                return (
+                    <div className="main">
+                        <div className="mainDiv">
+                            <h1>Student Creature Projects</h1>
+                            <hr/>
+                            <div>
+                                     {work}
+                            </div>
+                        </div>
+                    </div>
+                )
+
+
+            }
         }
-}
+
+
 
     class Title extends Component {
         constructor(props) {
@@ -50,9 +64,9 @@ export const Projects = [
         render() {
             
             return (
-                <h3>
+                <p>
                     {this.props.title}
-                </h3>
+               </p>
             );
         }
     }
