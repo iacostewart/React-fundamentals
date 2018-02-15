@@ -8,7 +8,7 @@ import React from 'react';
   import PropsDemo from '../concepts/PropsDemo';
   import MovieSearchApp from '../apps/movie-search-app/MovieApp';
   import Form from '../apps/movie-search-app/MovieApp';
-  import LifeCycleCodepen from '../concepts/LifeCycleCodepen';
+  import LifeCycleCodepen from '../concepts/LifeCycleCodepen'
   export const routes = [{
       path: '/' || '/home',
       exact: true,
@@ -45,7 +45,7 @@ import React from 'react';
       main: () => < MovieSearchApp />
     },
     {
-      path: '/lifecycle',
+      path: '/LifeCycleCodepen',
       exact: true,
       main: () => < LifeCycleCodepen />
 
