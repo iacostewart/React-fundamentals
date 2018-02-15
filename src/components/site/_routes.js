@@ -5,6 +5,9 @@ import React from 'react';
   import Resources from './Resources';
   import ClassComponentDemo from '../ClassComponentDemo';
   import ClassComponentNotes from '../ClassComponentDemo';
+  import PropsDemo from '../concepts/PropsDemo';
+  import MovieSearchApp from '../apps/movie-search-app/MovieApp';
+  import Form from '../apps/movie-search-app/MovieApp';
   export const routes = [{
       path: '/' || '/home',
       exact: true,
@@ -29,5 +32,16 @@ import React from 'react';
       path: '/classcomponentdemo',
       exact: true, 
       main: () => < ClassComponentDemo />
+    },
+    {
+      path: '/propsdemo',
+      exact: true, 
+      main: () => < PropsDemo  /> 
+    },
+    {
+      path: '/movie',
+      exact: true,
+      main: () => < MovieSearchApp />
     }
+
   ]
